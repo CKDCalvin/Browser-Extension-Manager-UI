@@ -1,0 +1,307 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    border-radius: 5px;
+    padding: 0px 50px;
+    min-height: 100vh;
+    background: linear-gradient(180deg, #EBF2FC 0%, #EEF8F9 100%);
+    font-family: 'Noto Sans', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    padding: 10px 10px;
+    background-color: hsl(200, 60%, 99%);
+    margin: 40px 0px;
+}
+
+h1 {
+    margin: 0px;
+}
+
+h2 {
+    margin: 0px;
+    font-size: 34px;
+    font-weight: 700;
+    color: hsl(227, 75%, 14%);
+}
+
+h3 {
+    font-weight: 700;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 0px;
+    gap: 20px;
+}
+
+#extli-state {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 0px;
+}
+
+.act-btn {
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: hsl(200, 60%, 99%);
+    border: none;
+    border-radius: 25px;
+    color: hsl(227, 75%, 14%);
+    font-size: 15px;
+    margin: 0px 4px;
+}
+
+.act-btn:hover {
+    background-color: hsl(0, 0%, 78%);
+    color: hsl(227, 75%, 14%);
+}
+
+.act-btn:focus{
+    border: 2px solid hsl(3, 86%, 64%);
+    /* color: hsl(0, 0%, 93%); */
+} 
+
+.background-color{
+    background-color: hsl(3, 86%, 64%);
+    color: hsl(0, 0%, 93%);
+}
+
+.ext-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: hsl(200, 60%, 99%);
+    gap: 20px;
+}
+
+.card-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 350px;
+    height: 150px;
+}
+
+.card-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-logo{
+    margin-right: 10px;
+    width: 40px;
+    height: 45px;
+}
+
+h3.card-title {
+    margin: 0px;
+}
+
+p.card-desc {
+    margin: 5px 0px 0px 0px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 19px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    inset: 0;
+    background: hsl(0, 0%, 78%);
+    border-radius: 25px;
+    transition: .3s;
+    border: 1px;
+}
+
+.switch:hover {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 19px;
+    border: 1px solid hsl(3, 86%, 64%);
+    border-radius: 50px;
+}
+
+.slider::before {
+    content: "";
+    position: absolute;
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    bottom: 3px;
+    background: white;
+    border-radius: 50%;
+    transition: .3s;
+}
+
+input:checked+.slider {
+    background: hsl(3, 77%, 44%);
+}
+
+input:checked+.slider:before {
+    transform: translateX(20px);
+}
+
+.remove {
+    cursor: pointer;
+    font-size: 15px;
+    color: hsl(227, 75%, 14%);
+    background-color: hsl(200, 60%, 99%);
+    border: 1px solid hsl(0, 0%, 78%);
+    border-radius: 25px;
+    padding: 10px 15px;
+}
+
+.remove:hover {
+    border: none;
+    color: hsl(200, 60%, 99%);
+    background-color: hsl(3, 71%, 56%);
+}
+
+.remove:focus {
+    background-color: hsl(0, 0%, 93%);
+    border: 2px solid hsl(3, 86%, 64%);
+    color: hsl(227, 75%, 14%);
+}
+
+.hidden{
+    display: none;
+}
+
+#dark{
+    background-color: hsl(0, 0%, 78%);
+}
+
+#dark:hover{
+    background-color: hsl(0, 0%, 78%);
+}
+
+#dark:focus{
+    background-color: hsl(0, 0%, 93%);
+    border: 1.5px solid hsl(3, 86%, 64%);
+}
+
+.hoverState:hover{
+    background-color: hsl(3, 86%, 64%);
+    color: hsl(226, 25%, 17%);
+}
+
+/* ------DARK MODE------- */
+
+body.dark-mode #bright{
+    background-color: hsl(225, 23%, 24%);
+    border: none;
+}
+
+body.dark-mode {
+    background: linear-gradient(180deg, #040918 0%, #091540 100%);
+    color: hsl(200, 60%, 99%);
+}
+
+body.dark-mode nav {
+    background-color: hsl(226, 25%, 17%);
+}
+
+body.dark-mode h2 {
+    color: hsl(0, 0%, 93%);
+}
+
+body.dark-mode .ext-card {
+    border: 1px solid rgb(255, 255, 255, 0.2);
+    background-color: hsl(226, 25%, 17%);
+}
+
+body.dark-mode .remove {
+    color: hsl(0, 0%, 93%);
+    background-color: hsl(226, 25%, 17%);
+    border-color: hsl(0, 0%, 40%);
+}
+
+body.dark-mode .remove:hover {
+    color: hsl(226, 25%, 17%);
+    background-color: hsl(3, 71%, 56%);
+}
+
+body.dark-mode .act-btn {
+    color: hsl(200, 60%, 99%);
+    background-color: hsl(226, 25%, 17%);
+    border: 1px solid rgb(255, 255, 255, 0.2);
+}
+
+/* highlight which theme button is active */
+
+#bright,
+#dark {
+    padding: 6px;
+    border: 1px solid rgb(255, 255, 255, 0.2);
+    border-radius: 25%;
+    background: transparent;
+    cursor: pointer;
+}
+
+body.dark-mode #dark {
+    border-color: hsl(3, 86%, 64%);
+    background-color: hsl(0, 0%, 93%);
+}
+
+body.dark-mode #bright:hover {
+    border-color: hsl(3, 86%, 64%);
+    background-color: hsl(226, 11%, 37%);
+}
+
+body.dark-mode #bright:focus{
+    border: 1.5px solid hsl(3, 86%, 64%);
+}
+
+body.dark-mode .background-color{
+    background-color: hsl(3, 86%, 64%);
+    color: hsl(0, 0%, 93%);
+}
+body.dark-mode .act-btn:focus {
+    /* background-color: hsl(226, 11%, 37%);
+    color: hsl(0, 0%, 78%); */
+    border: 1.5px solid hsl(3, 86%, 64%);
+
+}
+
+body.dark-mode .act-btn:hover {
+    background-color: hsl(226, 11%, 37%);
+    color: hsl(0, 0%, 78%);
+}
+
+body.dark-mode .hoverState:hover{
+    background-color: hsl(3, 86%, 64%);
+    color: hsl(226, 25%, 17%);
+}
+
+body.dark-mode .remove:focus {
+    background-color: hsl(226, 11%, 37%);
+    border: 2px solid hsl(3, 86%, 64%);
+    color: hsl(0, 0%, 78%);
+}

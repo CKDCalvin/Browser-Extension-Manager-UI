@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Browser extensions manager UI</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="./src/style.css">
+</head>
+
+<body>
+  <nav>
+    <img src="./src/assets/images/logo.svg">
+    <div id="ext-br">
+      <button id="bright"><img src="./src/assets/images/icon-sun.svg"></button>
+      <button id="dark"><img src="./src/assets/images/icon-moon.svg"></button>
+    </div>
+  </nav>
+  <div id="extli-state">
+    <h2>Extension List</h2>
+    <div id="ext-li">
+      <button id="btn-all" class="act-btn">All</button>
+      <button id="btn-actv" class="act-btn">Active</button>
+      <button id="btn-inactv" class="act-btn">Inactive</button>
+    </div>
+  </div>
+  <ul id="item-list"></ul>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+    Coded by <a href="#">Calvin Kugonza</a>.
+  </div>
+  <script src="./dist/main.js"></script>
+</body>
+
+</html>
