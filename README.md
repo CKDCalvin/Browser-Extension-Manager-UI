@@ -14,7 +14,6 @@ This is a solution to the [Browser extensions manager UI challenge on Frontend M
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -35,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Browser Extension Manager UI](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Browser Extension Manager UI](https://github.com/CKDCalvin/Browser-Extension-Manager-UI?tab=readme-ov-file#the-challenge)
+- Live Site URL: [Browser Extension Manager UI](https://your-live-site-url.com)
 
 ## My process
 
@@ -64,6 +63,4 @@ Areas I would like to continue focusing on include better separation of applicat
 - [W3Schools](https://www.w3schools.com/howto/howto_css_switch.asp) - This helped me understand how to implement the toggle switch in my application.
 
 ## Author
-
-- Website - [Calvin](https://www.your-site.com)
 - Frontend Mentor - [@CKDCalvin](https://www.frontendmentor.io/profile/CKDCalvin)
