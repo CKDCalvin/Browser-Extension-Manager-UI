@@ -1,4 +1,7 @@
-import './style.css';
+/*
+The current file contains app logic and data loading.
+I plan to refactor it.
+ */
 const allBtn = document.getElementById('btn-all');
 const actvBtn = document.getElementById('btn-actv');
 const inactvBtn = document.getElementById('btn-inactv');
@@ -88,7 +91,6 @@ function renderItems(filter) {
         //accesses the active button that is to be rendered as an on/off btn
         const toggleBtn = extDiv.querySelector('.toggle');
         toggleBtn.type = 'checkbox';
-        toggleBtn.id = 'toggleSwitch';
 
         toggleBtn.addEventListener("change", () => {
             console.log(`Toggle changed to ${toggleBtn.checked}`);
@@ -96,10 +98,6 @@ function renderItems(filter) {
             //change the item's isActive property to either false or true based on toggled switch
             item.isActive = toggleBtn.checked;
         });
-
-        const toggleLabel = document.createElement('label');
-        toggleLabel.htmlFor = 'toggleSwitch';
-        toggleLabel.classList.add('switch-style');
 
 
         const removeBtn = extDiv.querySelector('.remove');
