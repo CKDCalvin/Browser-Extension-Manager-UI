@@ -1,9 +1,4 @@
 import './style.css';
-import { loadData } from "./data";
+import { initApp } from "./data";
 
-//import { renderItems } from './render';
-function displayCards() {
-    return loadData();
-}
-
-displayCards();
+initApp();

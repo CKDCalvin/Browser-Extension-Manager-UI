@@ -2,12 +2,48 @@
 The current file contains app logic and data loading.
 I plan to refactor it.
  */
-const allBtn = document.getElementById('btn-all');
-const actvBtn = document.getElementById('btn-actv');
-const inactvBtn = document.getElementById('btn-inactv');
-const itemsList = document.getElementById('item-list');
-const brightBtn = document.getElementById('bright');
-const darkBtn = document.getElementById('dark');
+
+let allBtn;
+let itemsList;
+let brightBtn;
+let darkBtn;
+let actvBtn;
+let inactvBtn;
+
+function initApp() {
+    allBtn = document.getElementById('btn-all');
+    itemsList = document.getElementById('item-list');
+    brightBtn = document.getElementById('bright');
+    darkBtn = document.getElementById('dark');
+    actvBtn = document.getElementById('btn-actv');
+    inactvBtn = document.getElementById('btn-inactv');
+
+    allBtn.addEventListener('click', () => {
+        currentFilter = 'all';
+        renderItems('all');
+    });
+    actvBtn.addEventListener('click', () => {
+        currentFilter = 'active';
+        renderItems('active');
+    });
+    inactvBtn.addEventListener('click', () => {
+        currentFilter = 'inactive';
+        renderItems('inactive');
+    });
+
+    brightBtn.addEventListener('click', () => {
+        document.body.classList.remove('dark-mode');
+        toggleButtns();
+    });
+
+    darkBtn.addEventListener('click', () => {
+        document.body.classList.add('dark-mode');
+        toggleButtns();
+    });
+
+    loadData();
+
+}
 
 let items = [];
 let currentFilter = 'all';
@@ -113,18 +149,18 @@ function renderItems(filter) {
 }
 
 
-allBtn.addEventListener('click', () => {
-    currentFilter = 'all';
-    renderItems('all');
-});
-actvBtn.addEventListener('click', () => {
-    currentFilter = 'active';
-    renderItems('active');
-});
-inactvBtn.addEventListener('click', () => {
-    currentFilter = 'inactive';
-    renderItems('inactive');
-});
+// allBtn.addEventListener('click', () => {
+//     currentFilter = 'all';
+//     renderItems('all');
+// });
+// actvBtn.addEventListener('click', () => {
+//     currentFilter = 'active';
+//     renderItems('active');
+// });
+// inactvBtn.addEventListener('click', () => {
+//     currentFilter = 'inactive';
+//     renderItems('inactive');
+// });
 
 function toggleButtns() {
     if (!darkBtn.classList.contains('hidden')) {
@@ -137,14 +173,14 @@ function toggleButtns() {
     }
 }
 
-brightBtn.addEventListener('click', () => {
-    document.body.classList.remove('dark-mode');
-    toggleButtns();
-});
+// brightBtn.addEventListener('click', () => {
+//     document.body.classList.remove('dark-mode');
+//     toggleButtns();
+// });
 
-darkBtn.addEventListener('click', () => {
-    document.body.classList.add('dark-mode');
-    toggleButtns();
-});
+// darkBtn.addEventListener('click', () => {
+//     document.body.classList.add('dark-mode');
+//     toggleButtns();
+// });
 
-export { loadData };
+export { initApp };
