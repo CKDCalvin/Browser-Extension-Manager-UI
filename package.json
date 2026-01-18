@@ -4,8 +4,9 @@
   "description": "![Design preview for the Browser extensions manager UI coding challenge](./preview.jpg)",
   "main": "function.js",
   "scripts": {
-    "build": "webpack --watch",
-    "start": "webpack serve --open"
+    "build": "webpack --mode production",
+    "dev": "webpack --watch --mode development",
+    "start": "webpack serve --mode development --open"
   },
   "keywords": [],
   "author": "",
