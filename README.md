@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Browser Extension Manager UI](https://github.com/CKDCalvin/Browser-Extension-Manager-UI?tab=readme-ov-file#the-challenge)
-- Live Site URL: [Browser Extension Manager UI](https://your-live-site-url.com)
+- Solution URL: [GITHUB](https://github.com/CKDCalvin/Browser-Extension-Manager-UI)
+- Live Site URL: [NETLIFY](https://browser-extensionmanagerui.netlify.app/)
 
 ## My process
 
@@ -50,9 +50,14 @@ Users should be able to:
 
 **Note: These are just examples. Delete this note and replace the list above with your own choices**
 
-### What I learned
+### What I Learned
 
-During this project, I learned how to use Webpack to bundle JavaScript, CSS, and assets for a more reliable development and deployment workflow. I also gained hands-on experience implementing interactive UI features such as toggle switches and light/dark mode using JavaScript and CSS class manipulation. Additionally, working with external JSON data improved my understanding of asynchronous data loading and dynamic DOM rendering.
+- Configured **Webpack** for frontend application development, including defining entry points, output bundles, and asset handling for JavaScript, CSS, images, and fonts.
+- Built and deployed production-ready bundles using Webpack, gaining practical experience with differences between development and production environments.
+- Implemented interactive UI features such as **toggle switches and light/dark theme support** using JavaScript event handling and dynamic CSS class manipulation.
+- Loaded and rendered external JSON data asynchronously, reinforcing data-driven UI rendering and state updates.
+- Configured **Netlify deployment settings** for a Webpack-based application by specifying build commands and publish directories to ensure bundled assets were correctly served in a production environment.
+
 
 ### Continued development
 
